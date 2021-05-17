@@ -24,7 +24,7 @@ html,body{
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.472);
+    background-color: rgba(0, 0, 0, 0.527);
 }
 
 #nav1{
@@ -33,7 +33,7 @@ html,body{
     align-items: center;
     width: 100%;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.203);
+    background-color: rgba(133, 133, 133, 0.203);
     padding: 0 200px;
 }
 
@@ -51,8 +51,12 @@ html,body{
     font-size: 12px;
     text-decoration: none;
     opacity: .9;
+    transition: 0.3s all;
 }
-
+#nav1 a:hover{
+    font-size: 13px;
+    color: rgb(60, 0, 255);
+}
 #circle2{
     width: 10px;
     height: 10px;
@@ -104,19 +108,31 @@ html,body{
     border-width: 1px;
     outline: none;
     letter-spacing: 6px;
+    transition: 0.5 all;
 }
 
-
+#button1:hover{
+    background-color: blue;
+    border: none;
+}
 #about{
     position: relative;
     display: flex;
     align-items: center;
+    background-color: rgb(59, 56, 245);
     justify-content: space-between ;
     padding: 40px 100px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#about h3{
+    color: white;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 
@@ -190,12 +206,13 @@ margin-top: 5%;
 
 #elements #overlay{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 31, 98, 0.74);
     position: relative;
+    padding: 30px;
 }
 
 #overlay #element1 {
@@ -209,7 +226,9 @@ margin-top: 5%;
     box-shadow: -10px 20px 20px rgba(0, 0, 0, 0.267);
     
 }
-
+.details{
+    margin-top: 250px;
+}
 #overlay #element2 {
     width: 300px;
     height: 250px;
@@ -369,7 +388,6 @@ margin-top: 5%;
 
 }
 
-
 .newtextcontent
 {
    opacity: 1;
@@ -382,12 +400,30 @@ margin-top: 5%;
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: all cubic-bezier(0.19, 1, 0.22, 1) 4s;
-    
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 4s;   
+}
+.newpics
+{ 
+    opacity: 1;
 }
 
-.newpics
-{
-    
-    opacity: 1;
+#footer{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(221, 221, 221);
+    text-align: center;
+    padding: 30px;
+}
+
+#footer h4{
+    margin-top: 10px;
+}
+#footer span{
+    margin-top: 50px;
+    font-size: 12px;
+    opacity: .6;
+}
+#socialmedia i{
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
